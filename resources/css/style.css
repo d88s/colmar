@@ -130,11 +130,8 @@ header {
 }
 .left-side-bottom {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	border: 2px solid blue;
-	
-
-
 
 }
 .text {

@@ -12,7 +12,6 @@ html {
 
 /* Start Header - Nav Bar */
 header {
-	/*border: 4px solid black;*/
 	position: fixed;
 	background-color: white;
 	z-index: 1;
@@ -22,11 +21,11 @@ header {
 	justify-content: space-between;
 }
 .logo-title {
-	/*border: 2px solid black;*/
 	display: flex;
 	align-items: center;
 	font-size: 2rem;
-	padding-left: 1rem;
+	padding-left: 5rem;
+	position: relative;
 }
 #desktop-logo {
 	height: 3.5rem;
@@ -36,35 +35,36 @@ header {
 	font-weight: bold;
 }
 .desktop-menu {
-	/*border: 2px dotted red;*/
 	display: flex;
 	align-items: center;
 	font-size: 1.25rem;
-
+	padding-right: 4.25rem;
 }
 .desktop-menu a {
 	padding: 1.5rem;
+	transition: all 750ms linear 0s;
+}
+.desktop-menu a:hover {
+	color: white;
+	font-size: 2rem;
+	background-color: black;
+	border-radius: 5px;
 }
 /* End Header - Nav Bar */
 
-
 .main-container {
-	/*border: 3px solid black;*/
 	max-width: 1260px;
 	margin: 0 auto;
 	padding-top: 4.3rem;
 	display: flex;
 }
 
-
 /* Start Top Container */
 .top-container {
-	/*border: 2px solid red;*/
 	display: flex;
 	flex-direction: column;
 }
 .top-half {
-	/*border: 2px solid black;*/
 	display: flex;
 	background-color: rgb(196, 196, 197);
 }
@@ -72,23 +72,19 @@ header {
 	overflow: hidden;
 }
 .image-container img {
-	/*border: 2px solid green;*/
 	display: block;
 	max-width: 100%;
 }
 .top-half .image-container {
-	/*border: 2px solid green;*/
 	width: 60%;
 	padding: 2rem 2.5rem 2rem 1.5rem;
 }
 .right-side-top {
-	/*border: 5px solid yellow;*/
 	display: flex;
 	max-width: 30rem;
 	padding: 2rem 0;
 }
 .content {
-	/*border: 2px dotted blue;*/
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -113,37 +109,37 @@ header {
 	color: white;
 	align-content: center;
 	padding: 0.5rem 0;
+	transition: all 750ms ease-in 0s;
 }
+.content a:hover {
+	color: black;
+	background-color: white;
+	border: 2px solid black;
+}
+
+/* Bottom-Half of Top Container Starts */
+
 .bottom-half {
 	display: flex;
 }
 .bottom-half .image-container {
-	/*border: 2px solid green;*/
-	
 	padding: 2rem 1.5rem 2rem 1.5rem;
 }
 .right-side-bottom {
-	border: 2px solid black;
 	display: flex;
 	max-width: 100%;
 	padding: 1rem 0 0 1rem;
 }
 .left-side-bottom {
-	display: flex;
-	flex-direction: column;
-	border: 2px solid blue;
-	width: 75%;
+	width: 68%;
 }
-
 .text {
-
-	border: 2px solid red;
 	padding-left: 2rem;
-
-	height: 10rem;
+	height: auto;
 }
 .text h1 {
 	font-size: 2.5rem;
+	font-weight: 900;
 	padding-bottom: 1rem;
 }
 .text p {
@@ -157,9 +153,13 @@ header {
 .row {
 	display: flex;
 }
+.row:hover {
+	background-color: rgb(76, 76, 76);
+	color: white;
+}
 .row-container {
 	overflow: hidden;
-	width: 41%;
+	width: 40.5%;
 	padding: 1rem 1rem 1rem 0;
 }
 .row-container img {
@@ -169,37 +169,32 @@ header {
 .row-details {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	padding-top: 2rem;
 	max-width: 100%;
 	height: auto;
-
 }
 #gray {
-	background-color: gray;
+	background-color: rgb(196, 196, 197);
+}
+#gray:hover {
+	background-color: rgb(76, 76, 76);
 }
 .row-details h2 {
 	font-size: 1.5rem;
+	font-weight: 900;
+	padding-bottom: 0.5rem;
 }
 .row-details span {
-	font-size: 1.25rem
+	font-size: 1.0rem
 }
 .row-details a {
-	font-size: 1rem;
+	font-size: 1.5rem;
 	color: blue;
+	padding-top: 1.5rem;
 }
-
-
-/* Bottom-Half of Top Container Starts */
-
-
-
-
-
-
-
-
-
-
+.row-details a:hover {
+	color: white;
+}
 /* End Top Container */
 
 

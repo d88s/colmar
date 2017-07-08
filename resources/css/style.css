@@ -119,27 +119,36 @@ header {
 }
 .bottom-half .image-container {
 	/*border: 2px solid green;*/
-	width: 60%;
+	
 	padding: 2rem 1.5rem 2rem 1.5rem;
 }
 .right-side-bottom {
 	border: 2px solid black;
 	display: flex;
-	max-width: 26.4375rem;
+	max-width: 100%;
 	padding: 1rem 0 0 1rem;
 }
 .left-side-bottom {
 	display: flex;
 	flex-direction: column;
 	border: 2px solid blue;
-
+	width: 75%;
 }
-.text {
-	border: 2px solid red;
-	max-width: 60%;
-	padding-left: 2rem;
-	display: block;
 
+.text {
+
+	border: 2px solid red;
+	padding-left: 2rem;
+
+	height: 10rem;
+}
+.text h1 {
+	font-size: 2.5rem;
+	padding-bottom: 1rem;
+}
+.text p {
+	font-size: 1.5rem;
+	padding-bottom: 2.5rem;
 }
 .details {
 	display: flex;
@@ -150,7 +159,7 @@ header {
 }
 .row-container {
 	overflow: hidden;
-	width: 35%;
+	width: 41%;
 	padding: 1rem 1rem 1rem 0;
 }
 .row-container img {

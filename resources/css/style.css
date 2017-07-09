@@ -10,7 +10,7 @@ html {
 	display: none;
 }
 
-/* Start Header - Nav Bar */
+/* Start Header-Nav Bar */
 header {
 	position: fixed;
 	background-color: white;
@@ -50,19 +50,20 @@ header {
 	background-color: black;
 	border-radius: 5px;
 }
-/* End Header - Nav Bar */
+/* End Header - Nav-Bar */
 
+/*Start Main-Container - Entire Site Except Header and Footer is within Main-Container*/
 .main-container {
 	max-width: 1260px;
 	margin: 0 auto;
 	padding-top: 4.3rem;
 }
-
-/* Start Top Container */
+/* Start Top-Container */
 .top-container {
 	display: flex;
 	flex-direction: column;
 }
+/*Top-Half of Top-Container Begins*/
 .top-half {
 	display: flex;
 	background-color: rgb(196, 196, 197);
@@ -71,6 +72,10 @@ header {
 	overflow: hidden;
 }
 .image-container img {
+	display: block;
+	max-width: 100%;
+}
+.image-container video {
 	display: block;
 	max-width: 100%;
 }
@@ -115,9 +120,9 @@ header {
 	background-color: white;
 	border: 2px solid black;
 }
+/*Top-Half of Top-Container Ends*/
 
-/* Bottom-Half of Top Container Starts */
-
+/* Bottom-Half of Top-Container Begins */
 .bottom-half {
 	display: flex;
 }
@@ -125,13 +130,11 @@ header {
 	padding: 2rem 1.5rem 2rem 1.5rem;
 }
 .right-side-bottom {
-	border: 2px dotted yellow;
 	display: flex;
 	max-width: 100%;
 	padding: 1rem 0 0 1rem;
 }
 .left-side-bottom {
-	border: 2px solid black;
 	width: 67.5%;
 }
 .text {
@@ -149,7 +152,6 @@ header {
 	padding-bottom: 2.5rem;
 }
 .details {
-	border: 2px solid green;
 	display: flex;
 	flex-direction: column;
 }
@@ -176,6 +178,9 @@ header {
 	max-width: 100%;
 	height: auto;
 }
+#border {
+	border-bottom: 2px solid rgb(196, 196, 197);
+}
 #gray {
 	background-color: rgb(196, 196, 197);
 }
@@ -199,13 +204,10 @@ header {
 .row-details a:hover {
 	color: white;
 }
+/*Bottom-Half of Top-Container Ends*/
+/* End Top-Container */
 
-
-
-
-
-
-
+/*Start Middle-Container */
 .middle-container {
 	display: flex;
 	flex-direction: column;
@@ -263,34 +265,54 @@ header {
 	font-size: 1.25rem;
 	line-height: 1.10;
 }
+/* End Middle-Container */
 
-
-
-
-
-
+/*Start Bottom-Container */
 .bottom-container {
-	border: 2px solid blue;
-
-
-	
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+.bottom-container .title {
+	text-align: center;
+	margin-bottom: -3rem;
 }
 .bottom-container .image-container {
 	padding: 2rem 1.5rem 2rem 1.5rem;
 }
+.left-right {
+	display: flex;
+	max-width: 100%;
+}
+.bottom-container .details {
+	display: flex;
+	flex-direction: column;
+	padding-top: 1rem;
+}
+.bottom-container .left-side-bottom {
+	width: 75%;
+}
+/* End Bottom-Container */
 
+/*Start Footer*/
+footer {
+	display: flex;
+	justify-content: space-between;
+	border-top: 2px solid rgb(196, 196, 197);
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+footer .copyright {
+	padding-left: 1.5rem;
+}
+footer a {
+	padding-right: 1.5rem;
+}
+footer a:hover {
+	color: blue;
+}
+/*End Footer*/
 
-
-
-
-
-
-
-
-
-
-
-/* End Top Container */
 
 
 

@@ -176,46 +176,48 @@ header {
 
 	}
 	.top-half .image-container {
-		width: 80%;
+		width: 100%;
 		padding: 2rem 0 0 0;
-}
-.right-side-top {
-	display: flex;
-	flex-direction: column;
-	padding: 2rem 0;
-}
-.content {
-	display: flex;
-	margin: 0 auto;
-	justify-content: center;
-	width: 80%;
-	height: auto;
-}
-.content h1 {
-	font-size: 2rem;
-	font-weight: bold;
-	padding-bottom: 1.5rem
-}
-.content h3 {
-	font-size: 1.25rem;
-	font-weight: bold;
-	padding-bottom: 1.5rem;
-}
-.content a {
-	display: flex;
-	justify-content: center;
-	font-size: 1rem;
-	background-color: black;
-	color: white;
-	align-content: center;
-	padding: 0.5rem 0;
-	transition: all 750ms ease-in 0s;
-}
-.content a:hover {
-	color: black;
-	background-color: white;
-	border: 2px solid black;
-}
+	}
+	.right-side-top {
+		display: flex;
+		flex-direction: column;
+		padding: 2rem 0;
+	}
+	.content {
+		display: flex;
+		margin: 0 auto;
+		justify-content: center;
+		width: 100%;
+		height: auto;
+	}
+	.content h1 {
+		font-size: 2rem;
+		font-weight: bold;
+		padding-bottom: 1.5rem
+	}
+	.content h3 {
+		font-size: 1.25rem;
+		font-weight: bold;
+		padding-bottom: 1.5rem;
+	}
+	.content a {
+		display: flex;
+		justify-content: center;
+		font-size: 1rem;
+		background-color: black;
+		border-radius: 3px;
+		color: white;
+		align-content: center;
+		padding: 0.5rem 0;
+		transition: all 750ms ease-in 0s;
+	}
+	.content a:hover {
+		color: black;
+		background-color: white;
+		border: 2px solid black;
+		border-radius: 3px;
+	}
 
 }
 /*Top-Half of Top-Container Ends*/
@@ -302,6 +304,53 @@ header {
 .row-details a:hover {
 	color: white;
 }
+@media only screen and (max-width: 480px) {
+
+
+
+	.left-side-bottom {
+		display: none;
+	}
+	.right-side-bottom {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	}
+	.row-container {
+	border: 2px solid red;
+	overflow: hidden;
+	width: 100%;
+	
+}
+	.row-container img {
+	width: 100%;
+	
+}
+	.row {
+	display: block;
+
+}
+	.row-details {
+		border: 2px solid black;
+		width: 100%;
+		
+
+	
+	}
+	.details {
+		border: 2px solid green;
+		width: 100%;
+
+	
+
+	}
+}
+
+
+
+
+
+
 /*Bottom-Half of Top-Container Ends*/
 /* End Top-Container */
 

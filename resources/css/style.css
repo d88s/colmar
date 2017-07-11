@@ -50,7 +50,7 @@ header {
 	background-color: black;
 	border-radius: 5px;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 600px) {
 	.logo-title {
 		display: none;
 		}
@@ -82,9 +82,9 @@ header {
 	margin: 0 auto;
 	padding-top: 4.3rem;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 600px) {
 	.main-container {
-		max-width: 540px;
+		max-width: 600px;
 		margin: 0 auto;
 		padding-top: 4.1rem;
 	}
@@ -94,7 +94,7 @@ header {
 	display: flex;
 	flex-direction: column;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 600px) {
 	.top-container {
 		display: flex;
 		flex-direction: column;
@@ -159,7 +159,7 @@ header {
 	background-color: white;
 	border: 2px solid black;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 600px) {
 	.top-half {
 		display: flex;
 		flex-direction: column;
@@ -184,11 +184,12 @@ header {
 		display: flex;
 		flex-direction: column;
 		padding: 2rem 0;
+		max-width: 100%;
 	}
 	.content {
 		max-width: 540px;
 		display: flex;
-		padding-left: 1rem;
+		padding: 0 1rem 0 1rem;
 		flex-direction: column;
 		justify-content: center;
 	}
@@ -205,11 +206,8 @@ header {
 
 	.content a {
 		display: flex;
-		justify-content: center;
-		max-width: 540px;
-		margin-left: -3rem;
-		margin-right: -3rem;
-		align-content: center;
+		
+	
 	}
 	.content a:hover {
 	color: black;
@@ -302,12 +300,12 @@ header {
 .row-details a:hover {
 	color: white;
 }
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 650px) {
 		#mobile {
 		display: none;
 		}
 }
-@media only screen and (max-width: 540px)  {
+@media only screen and (max-width: 600px)  {
 		#desktop {
 		display: none;
 		}

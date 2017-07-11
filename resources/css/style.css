@@ -50,6 +50,30 @@ header {
 	background-color: black;
 	border-radius: 5px;
 }
+@media only screen and (max-width: 480px) {
+	.logo-title {
+		display: none;
+	}
+	nav.desktop-menu {
+		display: none;
+	}
+	header {
+		display: flex;
+		justify-content: center;
+	}
+	.mobile-menu {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	color: black;
+	justify-content: space-around;
+	padding-top: 0.5rem;
+	}
+	.mobile-menu img {
+		display: flex;
+		height: 3.75rem;
+	}
+}
 /* End Header - Nav-Bar */
 
 /*Start Main-Container - Entire Site Except Header and Footer is within Main-Container*/
@@ -58,11 +82,26 @@ header {
 	margin: 0 auto;
 	padding-top: 4.3rem;
 }
+@media only screen and (max-width: 480px) {
+	.main-container {
+		max-width: 480px;
+		margin: 0 auto;
+		padding-top: 4.1rem;
+	}
+}
 /* Start Top-Container */
 .top-container {
 	display: flex;
 	flex-direction: column;
 }
+@media only screen and (max-width: 480px) {
+	.top-container {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+}
+
 /*Top-Half of Top-Container Begins*/
 .top-half {
 	display: flex;
@@ -119,6 +158,65 @@ header {
 	color: black;
 	background-color: white;
 	border: 2px solid black;
+}
+@media only screen and (max-width: 480px) {
+	.top-half {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		background-color: rgb(196, 196, 197);
+	}
+	.image-container {
+		overflow: hidden;
+		margin: 0 auto;
+	}
+	.image-container img {
+		display: block;
+		max-width: 100%;
+
+	}
+	.top-half .image-container {
+		width: 80%;
+		padding: 2rem 0 0 0;
+}
+.right-side-top {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 0;
+}
+.content {
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
+	width: 80%;
+	height: auto;
+}
+.content h1 {
+	font-size: 2rem;
+	font-weight: bold;
+	padding-bottom: 1.5rem
+}
+.content h3 {
+	font-size: 1.25rem;
+	font-weight: bold;
+	padding-bottom: 1.5rem;
+}
+.content a {
+	display: flex;
+	justify-content: center;
+	font-size: 1rem;
+	background-color: black;
+	color: white;
+	align-content: center;
+	padding: 0.5rem 0;
+	transition: all 750ms ease-in 0s;
+}
+.content a:hover {
+	color: black;
+	background-color: white;
+	border: 2px solid black;
+}
+
 }
 /*Top-Half of Top-Container Ends*/
 
@@ -310,6 +408,11 @@ footer a {
 }
 footer a:hover {
 	color: blue;
+}
+@media only screen and (max-width: 480px) {
+	footer {
+		display: none;
+	}
 }
 /*End Footer*/
 

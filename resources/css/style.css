@@ -261,7 +261,7 @@ header {
 .row-container {
 	overflow: hidden;
 	width: 40%;
-	padding: 1rem 1rem 1rem 0;
+	padding: 1rem 1rem 1rem 0rem;
 }
 .row-container img {
 	display: block;
@@ -289,7 +289,7 @@ header {
 	padding-bottom: 0.5rem;
 }
 .row-details span {
-	font-size: 1.0rem
+	font-size: 1rem
 }
 .row-details a {
 	font-size: 1.5rem;
@@ -309,7 +309,7 @@ header {
 		#desktop {
 		display: none;
 		}
-		.left-side-bottom {
+		.bottom-half .left-side-bottom {
 		display: none;
 		}
 		.right-side-bottom {
@@ -331,27 +331,24 @@ header {
 		display: block;
 		}
 		.row-details {
-		width: 100%;
-		padding: 2rem 0 2rem 0;
+		max-width: 100%;
+		padding: 1rem 0 1.5rem 1rem;
 		}
 		.details {
 		width: 100%;
 		padding: 0;
 		}
 		.row:hover {
-			background-color: rgb(76, 76, 76);
-		color: white;
+		background-color: white;
+		color: black;
 		}
 		.row-details a:hover {
-		color: white;
+		color: blue;
 		}
 		#border {
 		display: none;
 	}
 }
-
-
-
 
 /*Bottom-Half of Top-Container Ends*/
 /* End Top-Container */
@@ -406,7 +403,6 @@ header {
 	font-size: 1.75rem;
 }
 .courses .text span {
-
 	font-size: 1rem;
 }
 .courses p {
@@ -414,6 +410,47 @@ header {
 	font-size: 1.25rem;
 	line-height: 1.10;
 }
+@media only screen and (min-width: 650px) {
+	#middle-mobile {
+		display: none;
+	}
+}
+@media only screen and (max-width: 600px) {
+	#middle-desktop {
+		display: none;
+	}
+	.middle-container-mobile {
+		border-top: 2px solid rgb(196, 196, 197);
+		margin: 0 auto;
+		height: auto;
+	}
+	.title-mobile {
+		padding: 2rem 0 1.5rem 0;
+		margin: 0;
+		font-size: 2.5rem;
+		text-align: center;
+	}
+	.text-mobile {
+		display: flex;
+		padding: 1rem;
+		max-width: 100%;
+		margin: 0 auto;
+		margin-bottom: 1rem;
+		background-color: rgb(196, 196, 197);
+		transition: all 750ms linear 0s;
+	}
+	.text-mobile:hover {
+		background-color: white;
+		color: black;
+		border: 2px solid black;
+	}
+	.text-mobile h1 {
+		font-size: 1.5rem;
+		font-weight: 900;
+		align-items: center;
+	}
+}
+
 /* End Middle-Container */
 
 /*Start Bottom-Container */
@@ -441,6 +478,34 @@ header {
 .bottom-container .left-side-bottom {
 	width: 75%;
 }
+@media only screen and (max-width: 600px) {
+
+	.bottom-container .right-side-bottom {
+		display: none;
+	}
+	.bottom-container .left-side-bottom {
+		width: 100%;
+		margin: 1rem 0 1.5rem 0;
+	
+	}
+	.bottom-container .image-container {
+		padding: 0;
+		max-width: 100%;
+	}
+	.bottom-container .title h1 {
+		font-size: 2.5rem;
+	}
+	.left-side-bottom .text {
+		display: none;
+	}
+	.image-container video {
+		max-width: 100%;	
+	}
+	.bottom-container {
+		max-height: 40rem;
+	}
+}
+
 /* End Bottom-Container */
 
 /*Start Footer*/
@@ -450,19 +515,23 @@ footer {
 	border-top: 2px solid rgb(196, 196, 197);
 	padding-top: 2rem;
 	padding-bottom: 2rem;
-}
+	}
 footer .copyright {
 	padding-left: 1.5rem;
-}
+	}
 footer a {
 	padding-right: 1.5rem;
-}
+	}
 footer a:hover {
 	color: blue;
-}
+	}
 @media only screen and (max-width: 480px) {
+
 	footer {
-		display: none;
+	justify-content: center;
+	}
+	footer .terms {
+	display: none;
 	}
 }
 /*End Footer*/

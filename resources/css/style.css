@@ -4,7 +4,7 @@ body {
 }
 html {
 	font-size: 16px;
-	font-family: Abel;
+	font-family: Abel, sans-serif;
 }
 /* Start Header-Nav Bar */
 header {
@@ -47,59 +47,60 @@ header {
 	border-radius: 5px;
 }
 @media only screen and (min-width: 650px) {
-	.mobile-menu {
-		display: none;
+.mobile-menu {
+	display: none;
 	}
 }
 @media only screen and (max-width: 600px) {
-	.logo-title {
-		display: none;
-		}
-	nav.desktop-menu {
-		display: none;
-		}
-	header {
-		display: flex;
-		justify-content: center;
-		}
-	.mobile-menu {
-		display: flex;
-		align-items: center;
-		width: 100%;
-		color: black;
-		justify-content: space-around;
-		padding-top: 0.5rem;
-		}
-	.mobile-menu img {
-		display: flex;
-		height: 3rem;
-		}
+.logo-title {
+	display: none;
+	}
+nav.desktop-menu {
+	display: none;
+	}
+header {
+	display: flex;
+	justify-content: center;
+	}
+.mobile-menu {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	color: black;
+	justify-content: space-around;
+	padding-top: 0.5rem;
+	}
+.mobile-menu img {
+	display: flex;
+	height: 3rem;
+	}
 }
 /* End Header - Nav-Bar */
 
-/*Start Main-Container - Entire Site Except Header and Footer is within Main-Container*/
+/*Start Main-Container - Entire Site Except Header and Footer is within 
+Main-Container*/
 .main-container {
 	max-width: 1260px;
 	margin: 0 auto;
 	padding-top: 4.3rem;
 }
 @media only screen and (max-width: 600px) {
-	.main-container {
-		max-width: 600px;
-		margin: 0 auto;
-		padding-top: 4.1rem;
+.main-container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding-top: 4.1rem;
 	}
 }
 /* Start Top-Container */
+	.top-container {
+	display: flex;
+	flex-direction: column;
+	}
+@media only screen and (max-width: 600px) {
 .top-container {
 	display: flex;
 	flex-direction: column;
-}
-@media only screen and (max-width: 600px) {
-	.top-container {
-		display: flex;
-		flex-direction: column;
-		margin: 0 auto;
+	margin: 0 auto;
 	}
 }
 
@@ -133,7 +134,6 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	max-width: 85%;
-	
 }
 .content h1 {
 	font-size: 2.5rem;
@@ -161,61 +161,56 @@ header {
 	border: 2px solid black;
 }
 @media only screen and (max-width: 600px) {
-	.top-half {
-		display: flex;
-		flex-direction: column;
-		margin: 0 auto;
-		background: url(../backgroundcolour.png);
-		margin-bottom: 2rem;
+.top-half {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	background: url(../backgroundcolour.png);
+	margin-bottom: 2rem;
 	}
-	.image-container {
-		overflow: hidden;
-		margin: 0 auto;
+.image-container {
+	overflow: hidden;
+	margin: 0 auto;
 	}
-	.image-container img {
-		display: block;
-		max-width: 100%;
+.image-container img {
+	display: block;
+	max-width: 100%;
 
 	}
-	.top-half .image-container {
-		width: 100%;
-		padding: 2rem 0 0 0;
+.top-half .image-container {
+	width: 100%;
+	padding: 2rem 0 0 0;
 	}
-	.right-side-top {
-		display: flex;
-		flex-direction: column;
-		padding: 2rem 0;
-		max-width: 100%;
+.right-side-top {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 0;
+	max-width: 100%;
 	}
-	.content {
-		max-width: 540px;
-		display: flex;
-		padding: 0 1rem 0 1rem;
-		flex-direction: column;
-		justify-content: center;
+.content {
+	max-width: 540px;
+	display: flex;
+	padding: 0 1rem 0 1rem;
+	flex-direction: column;
+	justify-content: center;
 	}
-	.content h1 {
-		font-size: 2rem;
-		font-weight: bold;
-		padding-bottom: 1.5rem
+.content h1 {
+	font-size: 2rem;
+	font-weight: bold;
+	padding-bottom: 1.5rem
 	}
-	.content h3 {
-		font-size: 1.25rem;
-		font-weight: bold;
-		padding-bottom: 1.5rem;
+.content h3 {
+	font-size: 1.25rem;
+	font-weight: bold;
+	padding-bottom: 1.5rem;
 	}
-
-	.content a {
-		display: flex;
-		
-	
+.content a {
+	display: flex;
 	}
-	.content a:hover {
+.content a:hover {
 	color: black;
 	background-color: white;
-	
-}
-
+	}
 }
 /*Top-Half of Top-Container Ends*/
 
@@ -302,55 +297,54 @@ header {
 	color: white;
 }
 @media only screen and (min-width: 650px) {
-		#mobile {
-		display: none;
-		}
-}
-@media only screen and (max-width: 600px)  {
-		#desktop {
-		display: none;
-		}
-		.bottom-half .left-side-bottom {
-		display: none;
-		}
-		.right-side-bottom {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		padding: 0;
-		}
-		.row-container {
-		overflow: hidden;
-		width: 100%;
-		padding: 0;
-		}
-		.row-container img {
-		display: block;
-		width: 100%;
-		}
-		.row {
-		display: block;
-		}
-		.row-details {
-		max-width: 100%;
-		padding: 1rem 0 1.5rem 1rem;
-		}
-		.details {
-		width: 100%;
-		padding: 0;
-		}
-		.row:hover {
-		background-color: white;
-		color: black;
-		}
-		.row-details a:hover {
-		color: blue;
-		}
-		#border {
-		display: none;
+#mobile {
+	display: none;
 	}
 }
-
+@media only screen and (max-width: 600px)  {
+#desktop {
+	display: none;
+	}
+.bottom-half .left-side-bottom {
+	display: none;
+	}
+.right-side-bottom {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 0;
+	}
+.row-container {
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	}
+.row-container img {
+	display: block;
+	width: 100%;
+	}
+.row {
+	display: block;
+	}
+.row-details {
+	max-width: 100%;
+	padding: 1rem 0 1.5rem 1rem;
+	}
+.details {
+	width: 100%;
+	padding: 0;
+	}
+.row:hover {
+	background-color: white;
+	color: black;
+	}
+.row-details a:hover {
+	color: blue;
+	}
+#border {
+	display: none;
+	}
+}
 /*Bottom-Half of Top-Container Ends*/
 /* End Top-Container */
 
@@ -413,45 +407,44 @@ header {
 }
 @media only screen and (min-width: 650px) {
 	#middle-mobile {
-		display: none;
+	display: none;
 	}
 }
 @media only screen and (max-width: 600px) {
-	#middle-desktop {
-		display: none;
+#middle-desktop {
+	display: none;
 	}
-	.middle-container-mobile {
-		border-top: 2px solid rgb(196, 196, 197);
-		margin: 0 auto;
-		height: auto;
+.middle-container-mobile {
+	border-top: 2px solid rgb(196, 196, 197);
+	margin: 0 auto;
+	height: auto;
 	}
-	.title-mobile {
-		padding: 2rem 0 1.5rem 0;
-		margin: 0;
-		font-size: 2.5rem;
-		text-align: center;
+.title-mobile {
+	padding: 2rem 0 1.5rem 0;
+	margin: 0;
+	font-size: 2.5rem;
+	text-align: center;
+	}	
+.text-mobile {
+	display: flex;
+	padding: 1rem;
+	max-width: 100%;
+	margin: 0 auto;
+	margin-bottom: 1rem;
+	background: url(../backgroundcolour.png);;
+	transition: all 750ms linear 0s;
 	}
-	.text-mobile {
-		display: flex;
-		padding: 1rem;
-		max-width: 100%;
-		margin: 0 auto;
-		margin-bottom: 1rem;
-		background: url(../backgroundcolour.png);;
-		transition: all 750ms linear 0s;
+.text-mobile:hover {
+	background-color: white;
+	color: black;
+	border: 2px solid black;
 	}
-	.text-mobile:hover {
-		background-color: white;
-		color: black;
-		border: 2px solid black;
-	}
-	.text-mobile h1 {
-		font-size: 1.5rem;
-		font-weight: 900;
-		align-items: center;
+.text-mobile h1 {
+	font-size: 1.5rem;
+	font-weight: 900;
+	align-items: center;
 	}
 }
-
 /* End Middle-Container */
 
 /*Start Bottom-Container */
@@ -480,34 +473,34 @@ header {
 	width: 75%;
 }
 @media only screen and (max-width: 600px) {
+.bottom-container .right-side-bottom {
+	display: none;
+	}
+.bottom-container .left-side-bottom {
+	width: 100%;
+	margin: 1rem 0 1.5rem 0;
 
-	.bottom-container .right-side-bottom {
-		display: none;
 	}
-	.bottom-container .left-side-bottom {
-		width: 100%;
-		margin: 1rem 0 1.5rem 0;
-	
+.bottom-container .image-container {
+	padding: 0;
+	max-width: 100%;
 	}
-	.bottom-container .image-container {
-		padding: 0;
-		max-width: 100%;
+.bottom-container .title h1 {
+	font-size: 2.5rem;
 	}
-	.bottom-container .title h1 {
-		font-size: 2.5rem;
+.left-side-bottom .text {
+	display: none;
 	}
-	.left-side-bottom .text {
-		display: none;
+.image-container video {
+	max-width: 100%;	
 	}
-	.image-container video {
-		max-width: 100%;	
-	}
-	.bottom-container {
-		max-height: 40rem;
+.bottom-container {
+	max-height: 40rem;
 	}
 }
-
 /* End Bottom-Container */
+
+/* End Main-Container*/
 
 /*Start Footer*/
 footer {
@@ -527,11 +520,10 @@ footer a:hover {
 	color: blue;
 	}
 @media only screen and (max-width: 480px) {
-
-	footer {
+footer {
 	justify-content: center;
 	}
-	footer .terms {
+footer .terms {
 	display: none;
 	}
 }
